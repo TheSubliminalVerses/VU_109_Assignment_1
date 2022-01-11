@@ -4,21 +4,25 @@
     font-family: "JetBrains Mono", monospace
 }
 
+/* intro text + cards */
+header {
+    margin-bottom: 35px;
+}
+
 div.intro {
     position: relative;
     text-align: center;
     top: 0;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     background-color: #eee;
     height: 200px;
     border-bottom: 1px solid black;
-    transition: 500ms linear;
+    transition: 500ms linear;;
 }
 
 div.intro:hover {
     background-color: #f1f1f1;
     border-bottom: 1px solid darkgreen;
-    box-shadow: 1px 5px 5px #ccc;
     color: darkgreen;
 }
 
@@ -100,6 +104,7 @@ table {
     left: 50%;
     transform: translateX(-50%);
 }
+/* END */
 
 /* Tables */
 table.top-selling-products {
@@ -132,4 +137,22 @@ table.top-selling-products tbody tr:nth-child(odd) {
 table.top-selling-products tbody tr:hover {
     background-color: #f6f6f6;
     font-weight: bold;
+}
+/* END */
+
+/* EXTRAS */
+button[type="submit"] {
+    padding: 5px 10px 5px 10px;
+    border: none;
+    background-color: #ffcc99;
+    border-radius: 5px;
+    transition: 500ms linear;
+}
+
+button[type="submit"]:hover {
+    border-radius: 25px;
+    border-bottom: 2px solid #db9833;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px #ccc;
+    color: #555;
 }
