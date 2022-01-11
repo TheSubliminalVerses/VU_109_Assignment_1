@@ -156,3 +156,73 @@ button[type="submit"]:hover {
     box-shadow: 1px 5px 10px #ccc;
     color: #555;
 }
+
+input[type="text"] {
+    border: none;
+    background-color: #ffcc99;
+    outline: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    transition: 500ms linear;
+}
+
+input[type="text"]:hover {
+    border-radius: 2px;
+}
+
+input[type="text"]:focus {
+    border-radius: 25px;
+}
+
+input[type="number"] {
+    border: none;
+    background-color: #ffcc99;
+    outline: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    transition: 500ms linear;
+}
+
+input[type="number"]:hover {
+    border-radius: 2px;
+}
+
+input[type="number"]:focus {
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    * {font-size: 12px}
+    header {margin-bottom: 5px}
+    div.intro {
+        font-size: 12px;
+        padding-bottom: 0;
+        height: 180px;
+    }
+    table {width: 50%}
+    table.top-selling-products th, td {padding: 2px}
+    table.top-selling-products img {height: 50px}
+    button[type="submit"] {
+        padding: 2px 5px 2px 5px;
+        font-size: 10px;
+        margin-left: 75px;
+        margin-bottom: 10px;
+    }
+    input[type="file"] {
+        padding: 0;
+        font-size: 10px;
+        margin-bottom: 12px;
+        margin-top: 5px;
+        margin-left: 25px;
+    }
+    input[type="text"] {
+        padding: 1px 2px 1px 2px;
+        font-size: 10px;
+    }
+    input[type="number"] {
+        padding: 1px 2px 1px 2px;
+        font-size: 10px;
+    }
+}
