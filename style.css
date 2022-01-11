@@ -86,10 +86,35 @@ table {
     transform: translateX(-50%);
 }
 
-table tr th {
-    padding: 0 10px 0 10px;
+/* Tables */
+table.top-selling-products {
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
-table tr td {
-    padding: 0 10px 0 10px;
+table.top-selling-products thead tr {
+    text-align: left;
+    color: #ffffff;
+    background-color: #db9833;
+}
+
+table.top-selling-products th, td {
+    padding: 10px;
+}
+
+table td.product-image {
+    text-align: center;
+}
+
+table.top-selling-products img {
+    height: 100px;
+}
+
+table.top-selling-products tbody tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+table.top-selling-products tbody tr:hover {
+    background-color: #f6f6f6;
+    font-weight: bold;
 }

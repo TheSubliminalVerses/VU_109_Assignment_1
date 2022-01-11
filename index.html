@@ -19,7 +19,7 @@
     </header>
 
     <div class="shop-main">
-        <div class="card" id="card1">
+        <!-- <div class="card" id="card1">
             <div class="image"></div>
             <div class="content">
                 <table>
@@ -35,7 +35,111 @@
                     </tr>
                 </table>
             </div>
-        </div>
+        </div> -->
+
+        <!-- Table -->
+        <table class="top-selling-products">
+            <caption>Top Selling Products</caption>
+            <thead>
+                <tr>
+                    <th>brand</th>
+                    <th>model</th>
+                    <th>os</th>
+                    <th>screensize</th>
+                    <th>image</th>
+                </th>
+            </thead>
+            <tbody>
+                <form action="https://wt.ops.labs.vu.nl/api22/6b1e7103" method="post">
+                <tr>
+                    <td><input name="brand" type="text" required></td>
+                    <td><input name="model" type="text" required></td>
+                    <td><input name="os" type="text" required></td>
+                    <td><input name="screensize" type="number" required></td>
+                    <td><input name="image" type="file" required><button type="submit">Add Product</button></td>
+                </tr>
+                </form>
+                <tr>
+                    <td>Apple</td>
+                    <td>iPhone 13</td>
+                    <td>iOS 15.0</td>
+                    <td>6.1 in</td>
+                    <td class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/IPhone_13_vector.svg/400px-IPhone_13_vector.svg.png" alt="Apple iPhone 13"></td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>MacBook Pro 14</td>
+                    <td>macOS 11.6</td>
+                    <td>14 in</td>
+                    <td class="product-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSxgpT72SixqlSOnoSaoyaGmRethsjDBfXQ&usqp=CAU" alt="Apple MacBook Pro 14"></td>
+                </tr>
+                <tr>
+                    <td>Samsung</td>
+                    <td>Galaxy S21 Ultra</td>
+                    <td>Android 11</td>
+                    <td>6.8 in</td>
+                    <td class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/GalaxyS21.png/440px-GalaxyS21.png" alt="Samsung Galaxy S21 Ultra"></td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>Watch Series 7</td>
+                    <td>watchOS 8.3</td>
+                    <td>1.691 in</td>
+                    <td class="product-image"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MKUQ3_VW_PF+watch-45-alum-midnight-nc-7s_VW_PF_WF_CO?wid=1400&hei=1400&trim=1,0&fmt=p-jpg&qlt=95&.v=1632171068000,1631661680000" alt="Apple Watch Series 7"></td>
+                </tr>
+                <tr>
+                    <td>Microsoft</td>
+                    <td>Surface Laptop 4</td>
+                    <td>Windows 11</td>
+                    <td>15 in</td>
+                    <td class="product-image"><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWBrzy?ver=85d4&q=90&m=6&h=270&w=270&b=%23FFFFFFFF&f=jpg&o=f&aim=true" alt="Microsoft Surface Laptop 4"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <table class="reviews">
+            <caption>Shop Reviews</caption>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>User</th>
+                    <th>Feedback</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10 Jan 2022</td>
+                    <td>Mike</td>
+                    <td>Thanks</td>
+                    <td>&#9734;&#9734;&#9733;&#9733;&#9733;</td>
+                </tr>
+                <tr>
+                    <td>8 Jan 2022</td>
+                    <td>Alice</td>
+                    <td>Great service and fast delivery</td>
+                    <td>&#9734;&#9733;&#9733;&#9733;&#9733;</td>
+                </tr>
+                <tr>
+                    <td>4 Jan 2022</td>
+                    <td>Jenny</td>
+                    <td>Best webshop, use it all the time.</td>
+                    <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                </tr>
+                <tr>
+                    <td>2 Jan 2022</td>
+                    <td>Henry</td>
+                    <td>Great prices and large selection of products.</td>
+                    <td>&#9734;&#9733;&#9733;&#9733;&#9733;</td>
+                </tr>
+                <tr>
+                    <td>1 Jan 2022</td>
+                    <td>Flinn</td>
+                    <td>I had a small issue with the product, customer service solved the issue right away.</td>
+                    <td>&#9734;&#9734;&#9733;&#9733;&#9733;</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
