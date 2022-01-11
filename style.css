@@ -4,6 +4,34 @@
     font-family: "JetBrains Mono", monospace
 }
 
+div.intro {
+    position: relative;
+    text-align: center;
+    top: 0;
+    padding-bottom: 15px;
+    background-color: #eee;
+    height: 100px;
+    border-bottom: 1px solid black;
+    transition: 500ms linear;
+}
+
+div.intro:hover {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid darkgreen;
+    box-shadow: 1px 5px 5px #ccc;
+    color: darkgreen;
+}
+
+div.intro h1 {
+    position: relative;
+    top: 5px;
+}
+
+div.intro p {
+    position: relative;
+    top: 15px;
+}
+
 div.shop-main {
     position: absolute;
     width: 100%;
