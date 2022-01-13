@@ -278,6 +278,7 @@ section#os-definitions p a:visited {
     color: #339966;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
