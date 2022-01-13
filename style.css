@@ -318,3 +318,18 @@ section#os-definitions p a:visited {
         display: none;
     }
 }
+
+::-webkit-scrollbar {
+    background-color: #ff993355;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff9933;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff993377;
+}
