@@ -264,6 +264,7 @@ button[type="submit"]:hover {
     color: #555;
 }
 
+/* INPUTS */
 input[type="text"] {
     border: none;
     background-color: #ffcc99;
@@ -300,6 +301,9 @@ input[type="number"]:focus {
     border-radius: 25px;
 }
 
+/* END */
+
+/* SECTION */
 section#os-definitions p a:link{
     text-decoration: none;
     color: #9933ff;
@@ -318,6 +322,10 @@ section#os-definitions p a:visited {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+/* END */
+
+/* Media queries */
 
 @media only screen and (max-width: 768px) {
     * {font-size: 12px}
@@ -349,7 +357,17 @@ section#os-definitions p a:visited {
         padding: 1px 2px 1px 2px;
         font-size: 10px;
     }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        display: none;
+    }
 }
+
+/* print */
 
 @media print {
     body {
@@ -372,6 +390,10 @@ section#os-definitions p a:visited {
     }
 }
 
+/* END */
+
+/* CUSTOM SCROLL BAR */
+
 ::-webkit-scrollbar {
     background-color: #ff993355;
     border-radius: 12px;
@@ -386,3 +408,5 @@ section#os-definitions p a:visited {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #ff993377;
 }
+
+/* END */
