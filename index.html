@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+    This webpage is written by Mani Gudvardarson and Michael Adrian Polesensky
+    for Assignment 1 in Web Technology at VU University Amsterdam.
+
+    Coordinator: J.R . van Ossenbruggen
+    TA: Mithat Ozgun
+    Group: 109
+    Date: 13.1.2022
+ -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,6 +79,8 @@
                         <th>screensize</th>
                         <th>image</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr class="input-row">
                         <td><input name="brand" type="text" form="add-product" required></td>
                         <td><input name="model" type="text" form="add-product" required></td>
@@ -77,8 +88,6 @@
                         <td><input name="screensize" type="number" form="add-product" required></td>
                         <td><input name="image" type="file" form="add-product" required><button type="submit" form="add-product">Add Product</button></td>
                     </tr>
-                </thead>
-                <tbody>
                     <tr>
                         <td>Apple</td>
                         <td>iPhone 13</td>
@@ -212,12 +221,19 @@
             <div>If you are interested in front-end development, here is a code snippet from our stylesheet </div>
             <pre>
                 <code>
-                    nav {
-                        border-bottom: 1px solid black;
-                    }
+    nav {
+        border-bottom: 1px solid black;
+    }
                 </code>
             </pre>
         </section>
     </div>
 </body>
 </html>
+<!--
+    == Browser compatibility report ==
+    This page has been tested and is confirmed to be working with the following browsers:
+    - Google Chrome v97
+    - Safari v14
+    - Firefox v95
+-->
