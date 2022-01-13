@@ -1,10 +1,19 @@
+/*
+This webpage is written by Mani Gudvardarson and Michael Adrian Polesensky
+for Assignment 1 in Web Technology at VU University Amsterdam.
+
+Coordinator: J.R . van Ossenbruggen
+TA: Mithat Ozgun
+Group: 109
+Date: 13.1.2022
+*/
+
 * {
     padding: 0;
     margin: 0;
     font-family: "JetBrains Mono", monospace, "Agency FB", "Arial", "Verdana", sans-serif;
 }
 
-/* intro text + cards */
 /* header */
 header {
     margin-bottom: 35px;
@@ -97,7 +106,7 @@ section {
     padding-right: 20px;
 }
 
-.top-selling-products {
+.top-selling-products, #reviews {
     overflow-x: auto;
 }
 
