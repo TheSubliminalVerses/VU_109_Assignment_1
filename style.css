@@ -8,8 +8,9 @@
 /* header */
 header {
     margin-bottom: 35px;
-    background-color: #eee;
-    transition: 500ms linear;;
+    transition: 500ms linear;
+    background-image: url('https://storage.googleapis.com/subtlepatterns-production/designers/subtlepatterns/uploads/webb.png');
+    background-repeat: repeat;
 }
 
 header .contact {
@@ -19,7 +20,6 @@ header .contact {
 header div.intro {
     text-align: center;
     padding-bottom: 20px;
-    background-color: #eee;
 }
 
 header div.intro:hover {
@@ -32,20 +32,39 @@ header div.intro h1 {
     margin-top: 5px;
 }
 
+header .header-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .shopping-basket {
+    margin-right: 30px;
+}
+
 div.intro p {
     margin-top: 15px;
 }
 
 div.intro ul {
-    list-style: none;
     text-align: left;
     padding-left: 15px;
 }
 
+.no-bullets {
+    list-style: none;
+}
+
 nav {
-    background-color: #ffffff;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    background: #ffffff;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+ol {
+    list-style-type: upper-roman;
+    list-style-position: outside;
 }
 
 nav ul {
@@ -56,6 +75,10 @@ nav ul {
 nav li {
     display: inline-block;
     margin-right: 20px;
+}
+
+.image-list li {
+    list-style-image: url('https://cssreference.io/images/list-style-image.png');
 }
 
 /* main */
@@ -93,7 +116,7 @@ dl dt {
 }
 
 dl dd {
-    margin-left: 20px;
+    text-indent: 20px;
 }
 
 nav ul li a:link {
@@ -140,6 +163,12 @@ div.contact ul {
 table {
     margin-left: auto;
     margin-right: auto;
+    caption-side: top;
+}
+
+img {
+    float: none;
+    vertical-align: middle;
 }
 
 .table-footnote {
@@ -322,8 +351,23 @@ section#os-definitions p a:visited {
 }
 
 @media print {
+    body {
+        margin: 50px;
+        orphans: 2;
+        widows: 2;
+    }
+
     .input-row {
         display: none;
+    }
+
+    #top-selling-products {
+        page-break-after: auto;
+    }
+
+    #os-definitions {
+        margin-top: 50px;
+        page-break-before: always;
     }
 }
 
