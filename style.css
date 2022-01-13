@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "JetBrains Mono", monospace
+    font-family: "JetBrains Mono", monospace, "Agency FB", "Arial", "Verdana", sans-serif;
 }
 
 /* intro text + cards */
@@ -82,6 +82,41 @@ nav li {
     display: inline-block;
     margin-right: 20px;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: 500ms linear;
+}
+
+nav ul li a::before {
+    content: "";
+    position: relative;
+    display: block;
+    top: 22px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: 500ms linear;
+}
+
+nav ul li a:hover {
+    color: #ff9933;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+    background-color: #ff9933;
+}
+
+nav ul li a:visited {
+    color: orangered;
+}
+
+nav ul li a:visited::before {
+    background-color: orangered;
+}
 /* END */
 
 /* Tables */
@@ -124,6 +159,22 @@ table.top-selling-products tbody tr:nth-child(odd) {
 table.top-selling-products tbody tr:hover {
     background-color: #f6f6f6;
     font-weight: bold;
+}
+
+div.table-footnote a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    transition: 500ms linear;
+}
+
+div.table-footnote a:hover {
+    color: #00cc66;
+    font-size: 17px;
+}
+
+div.table-footnote a:visited {
+    color: #339966;
 }
 /* END */
 
@@ -178,6 +229,24 @@ input[type="number"]:hover {
 
 input[type="number"]:focus {
     border-radius: 25px;
+}
+
+section#os-definitions p a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: 500ms linear;
+}
+
+section#os-definitions p a:hover {
+    color: #00cc66;
+    font-size: 17px;
+}
+
+section#os-definitions p a:visited {
+    color: #339966;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 768px) {
