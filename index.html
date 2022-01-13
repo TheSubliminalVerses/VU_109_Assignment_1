@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css" type="text/css">
     <title>Awesome Shop (WIP title)</title>
     <!-- reserved for *.loader.js file -->
@@ -13,14 +13,17 @@
     <header>
         <div class="intro">
             <h1>About This Page</h1>
-            <p>We have a large variety of high quality items straight from the
-            manufacturers.</p>
-            <h2>Where can you find us?</h2>
-            <ul>
-                <li>Address: 2nd street, NewYork</li>
-                <li>Phone: <a href="tel:+1311255464">+1 311 255 464</a></li>
-                <li>Contact: <a href="mailto:astore@support.com">astore@support.com</a></li>
-            </ul>
+            <p>We have a large variety of high quality items straight from the manufacturers.</p>
+        </div>
+        <div>
+            <div class="contact">
+                <h2>Where can you find us?</h2>
+                <ul>
+                    <li>Address: <strong>2nd street, NewYork</strong></li>
+                    <li>Phone: <a href="tel:+1311255464">+1 311 255 464</a></li>
+                    <li>Contact: <a href="mailto:astore@support.com">astore@support.com</a></li>
+                </ul>
+            </div>
         </div>
         <nav>
             <ul>
@@ -32,20 +35,33 @@
     </header>
 
     <div class="shop-main">
-        <section>
-            <h2>Top Selling Categories</h2>
-            <ol>
-                <li>Smartphones</li>
-                <li>Laptops</li>
-                <li>PCs</li>
-                <li>Monitors</li>
-                <li>Smartphone Covers</li>
-            </ol>
-        </section>
+        <div class="top-selling">
+            <section>
+                <h2>Top Selling Categories</h2>
+                <ol>
+                    <li>Smartphones</li>
+                    <li>Laptops</li>
+                    <li>PCs</li>
+                    <li>Monitors</li>
+                    <li>Smartphone Covers</li>
+                </ol>
+            </section>
+            <section>
+                <h2>Top Selling Brands</h2>
+                <ol>
+                    <li>Apple</li>
+                    <li>Samsung</li>
+                    <li>LG</li>
+                </ol>
+            </section>
+        </div>
 
-        <section id="top-selling-products">
-            <table class="top-selling-products" >
-                <caption><strong>Top Selling Products</strong></caption>
+        <section  class="top-selling-products" id="top-selling-products">
+            <h2>Top Selling Products</h2>
+
+            <form action="https://wt.ops.labs.vu.nl/api22/6b1e7103" method="post" id="add-product"></form>
+            <table>
+                <caption>Product table</caption>
                 <thead>
                     <tr>
                         <th>brand</th>
@@ -53,18 +69,16 @@
                         <th><abbr title="Operating System">os</abbr></th>
                         <th>screensize</th>
                         <th>image</th>
-                    </th>
+                    </tr>
+                    <tr class="input-row">
+                        <td><input name="brand" type="text" form="add-product" required></td>
+                        <td><input name="model" type="text" form="add-product" required></td>
+                        <td><input name="os" type="text" form="add-product" required></td>
+                        <td><input name="screensize" type="number" form="add-product" required></td>
+                        <td><input name="image" type="file" form="add-product" required><button type="submit" form="add-product">Add Product</button></td>
+                    </tr>
                 </thead>
                 <tbody>
-                    <form action="https://wt.ops.labs.vu.nl/api22/6b1e7103" method="post">
-                    <tr>
-                        <td><input name="brand" type="text" required></td>
-                        <td><input name="model" type="text" required></td>
-                        <td><input name="os" type="text" required></td>
-                        <td><input name="screensize" type="number" required></td>
-                        <td><input name="image" type="file" required><button type="submit">Add Product</button></td>
-                    </tr>
-                    </form>
                     <tr>
                         <td>Apple</td>
                         <td>iPhone 13</td>
@@ -132,11 +146,12 @@
         </section>
 
         <section id="reviews">
+            <h2>Reviews</h2>
             <table class="reviews">
-                <caption><strong>Shop Reviews</strong></caption>
+                <caption>Table of reviews</caption>
                 <thead>
                     <tr>
-                        <th>Date</th>
+                        <th class="table-date">Date</th>
                         <th>User</th>
                         <th>Feedback</th>
                         <th>Score</th>
@@ -189,7 +204,7 @@
                 <dt>Windows</dt>
                 <dd>Microsoft Windows, commonly referred to as Windows, is a group of several proprietary graphical operating system families, all of which are developed and marketed by Microsoft.</dd>
             </dl>
-            <p>Information gathered from <a href="https://en.wikipedia.org/">Wikipedia</a></p>
+            <p><em>Information gathered from <strong><a href="https://en.wikipedia.org/">Wikipedia</a></strong></em></p>
         </section>
 
         <section id="styling-examples">
