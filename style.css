@@ -161,6 +161,24 @@ table.top-selling-products tbody tr:hover {
     font-weight: bold;
 }
 
+table td.product-image {
+    text-align: center;
+}
+
+table.reviews th {
+    text-align: left;
+}
+
+table.reviews td {
+    min-width: 125px;
+    padding: 10px 0;
+}
+
+table.reviews .score {
+    font-size: 20px;
+    color: #FF8C00;
+}
+
 div.table-footnote a:link {
     text-transform: uppercase;
     text-decoration: none;
