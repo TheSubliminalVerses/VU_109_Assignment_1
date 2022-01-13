@@ -130,6 +130,10 @@ nav ul li a:visited {
 nav ul li a:visited::before {
     background-color: orangered;
 }
+
+div.contact ul {
+    list-style: none;
+}
 /* END */
 
 /* Tables */
