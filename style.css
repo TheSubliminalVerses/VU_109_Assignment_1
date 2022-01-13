@@ -153,6 +153,10 @@ nav ul li a:visited {
 nav ul li a:visited::before {
     background-color: orangered;
 }
+
+div.contact ul {
+    list-style: none;
+}
 /* END */
 
 /* Tables */
@@ -303,6 +307,7 @@ section#os-definitions p a:visited {
     color: #339966;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
@@ -356,4 +361,19 @@ section#os-definitions p a:visited {
         margin-top: 50px;
         page-break-before: always;
     }
+}
+
+::-webkit-scrollbar {
+    background-color: #ff993355;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff9933;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff993377;
 }
