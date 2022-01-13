@@ -83,9 +83,9 @@ nav li {
     margin-right: 20px;
 }
 
-nav ul li a {
+nav ul li a:link {
     text-decoration: none;
-    color: black;
+    color: #9933ff;
     text-transform: uppercase;
     transition: 500ms linear;
 }
@@ -161,10 +161,10 @@ table.top-selling-products tbody tr:hover {
     font-weight: bold;
 }
 
-div.table-footnote a {
+div.table-footnote a:link {
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: #9933ff;
     transition: 500ms linear;
 }
 
@@ -231,9 +231,9 @@ input[type="number"]:focus {
     border-radius: 25px;
 }
 
-section#os-definitions p a {
+section#os-definitions p a:link{
     text-decoration: none;
-    color: black;
+    color: #9933ff;
     text-transform: uppercase;
     transition: 500ms linear;
 }
