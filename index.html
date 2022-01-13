@@ -24,13 +24,20 @@
             <h1>About This Page</h1>
             <p>We have a large variety of high quality items straight from the manufacturers.</p>
         </div>
-        <div>
+        <div class="header-row">
             <div class="contact">
                 <h2>Where can you find us?</h2>
-                <ul>
+                <ul class="no-bullets">
                     <li>Address: <strong>2nd street, NewYork</strong></li>
                     <li>Phone: <a href="tel:+1311255464">+1 311 255 464</a></li>
                     <li>Contact: <a href="mailto:astore@support.com">astore@support.com</a></li>
+                </ul>
+            </div>
+            <div class="shopping-basket">
+                <h2>Shopping basket</h2>
+                <ul class="image-list">
+                    <li>Items: <strong>3 items</strong></li>
+                    <li>Total: €1.239.30</li>
                 </ul>
             </div>
         </div>
@@ -39,13 +46,14 @@
                 <li><a href="#top-selling-products">Top Selling Products</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#styling-examples">Styling Examples</a></li>
+                <li><a href="#return-policy">Return Policy</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="shop-main">
-        <div class="top-selling">
-            <section>
+        <section class="top-selling">
+            <div>
                 <h2>Top Selling Categories</h2>
                 <ol>
                     <li>Smartphones</li>
@@ -54,16 +62,16 @@
                     <li>Monitors</li>
                     <li>Smartphone Covers</li>
                 </ol>
-            </section>
-            <section>
+            </div>
+            <div>
                 <h2>Top Selling Brands</h2>
                 <ol>
                     <li>Apple</li>
                     <li>Samsung</li>
                     <li>LG</li>
                 </ol>
-            </section>
-        </div>
+            </div>
+        </section>
 
         <section  class="top-selling-products" id="top-selling-products">
             <h2>Top Selling Products</h2>
@@ -82,10 +90,10 @@
                 </thead>
                 <tbody>
                     <tr class="input-row">
-                        <td><input name="brand" type="text" form="add-product" required></td>
-                        <td><input name="model" type="text" form="add-product" required></td>
-                        <td><input name="os" type="text" form="add-product" required></td>
-                        <td><input name="screensize" type="number" form="add-product" required></td>
+                        <td><input name="brand" type="text" placeholder="Example: Apple" form="add-product" required></td>
+                        <td><input name="model" type="text" placeholder="Example: iPhone 12" form="add-product" required></td>
+                        <td><input name="os" type="text" placeholder="Example: iOS" form="add-product" required></td>
+                        <td><input name="screensize" type="number" form="add-product" required><abbr title="Inches">in</abbr></td>
                         <td><input name="image" type="file" form="add-product" required><button type="submit" form="add-product">Add Product</button></td>
                     </tr>
                     <tr>
@@ -226,6 +234,22 @@
     }
                 </code>
             </pre>
+        </section>
+
+        <section id="return-policy">
+            <h2>Return Policy</h2>
+            <div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+                <p>
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    nd more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
         </section>
     </div>
 </body>
